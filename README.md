@@ -1,46 +1,34 @@
-# Getting Started with Create React App
+📌
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# **Prueba Técnica**
 
-## Available Scripts
+## **Resumen del proyecto!**
 
-In the project directory, you can run:
+El proyecto consiste en la realización de un gestor de datos o CMS basado en React y Typescript, utilizando otras
 
-### `npm start`
+herramientas como Ant Design 5.0, React Router Dom o React Icons. El sistema permite mostrar información, crear un nuevo ítem en la base de datos, actualizar campos o borrarlos. El diseño es limpio y simple, y el código incluye comentarios
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+para facilitar su comprensión. Los datos se recogen de un archivo JSON y se manejan a través de un contexto que
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+proporciona acceso a los datos y las funciones para manipularlos.
 
-### `npm test`
+Para iniciar el proyecto simplemente se necesita abrir la terminal dentro del proyecto, descargar todas las dependencias y después abrir el proyecto en local.<hr>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```diff
++ npm i //instalar dependencias
++ npm start //abrir el proyecto
+```
+## **Archivos nuevos del proyecto**
 
-### `npm run build`
+- _jsonEjemplo.json_ : Está ubicado en la carpeta public. He intentado usar el modelo y sacar los datos de el para agilizar el proceso. Al ser un fichero de “texto” no se ha modificado como tal pero si me sirve como estado inicial para la aplicación.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- _Types.ts_ : Para definir los modelos de la información y agruparlos en un archivo de manera ordenada.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- _DataContext.txs_ : Se utiliza para compartir datos en toda la aplicación. Desde aquí recogemos los datos del json. Se definen otras funciones como la de actualizar los datos, borrarlos y añadir. Todo esto en un estado y realizando copias de estos para no modificar los datos y no poder recuperarlos. El proveedor del contexto envuelve a los componentes hijos (children) y les proporciona acceso a los datos y las funciones para manipular esos datos.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- _ModelList.tsx_ : Muestra lo que sería la página principal del CMS. Se muestran los items (en este caso los he llamado modelos ya que tiene que ver con modelos 2D, 3D) con dos opciones en cada uno. Un botón para ir a la página para editar ese item y ver toda su información y un botón de borrado que abre un popup de confirmación para asegurarnos de que queremos borrar ese item. Importante destacar que al simular funciones de POST, UPDATE, REMOVE si se recarga la página vuelve al estado inicial pero se puede usar sin problema y probar navegando por ella sin hacer recarga.
 
-### `npm run eject`
+- _ModelEdit.tsx_ : Página que edita cada item (cada modelo de la lista). En el se muestra la id del modelo para identificar cuál es, posición, título, descripción, tipo de archivo y la url de donde lo podemos encontrar. Se pueden editar campos (simulación) como título y descripción ya que se supone que tiene una posición fija y los demás datos dan información sobre lo que contiene. Al editar los campos y darle al botón de “Guardar cambios” se actualizará el estado del mismo.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- _NewModel.tsx_: Para crear un nuevo modelo y añadirlo a la lista actualizando el estado. El campo de id no es modificable ya que se asigna el siguiente id disponible y no queremos que se puedan repetir. Podemos aquí si podemos asignarle una posición además del título y descripción. En el caso de no rellenar los campos, no se muestran al editarlos ya que están en blanco. Al crear el nuevo modelo se redirige a la “Home” que es nuestro componente “ModelList”. Ahora en la lista aparece otro item con las mismas características que los demás.
+  Prueb a Técnic a ECAM 3
