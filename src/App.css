@@ -2,37 +2,138 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  min-height: 70px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: 0 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.btn-container {
+  height: 28px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon-btn {
+  margin-right: 5px;
+  padding-top: 2px;
+  font-size: 16px;
+}
+
+.scrolleable {
+  max-width: 90%;
+  margin: 0px auto;
+  padding: 0px 0px 40px;
+  height: 650px;
+  overflow-y: auto;
+  margin-top: 40px;
+}
+
+.model-card {
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.model-card:hover {
+  cursor: pointer;
+  background-color: #bdcde1;
+  transition: all 0.3s ease-in;
+}
+
+.edit-btn,
+.remove-btn {
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.edit-btn {
+  color: rgb(20, 20, 20);
+}
+
+.edit-btn:hover {
+  color: rgb(44, 64, 116);
+}
+
+.remove-btn {
+  color: #fc2d5c;
+}
+
+.remove-btn:hover {
+  color: rgb(0, 0, 0);
+}
+
+.header-back {
+  height: 70px;
+  display: flex;
+  align-items: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.header-back > a {
+  font-size: 32px;
+  color: #1e3c82;
+  transition: all 0.3s ease-in-out;
+}
+
+.header-back > a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.back-btn-text {
+  font-size: 14px;
+  padding: 0 0 8px 5px;
+}
+
+.item {
+  margin-bottom: 70px;
+  padding: 20px;
+  background-color: #bdcde1;
+  border-radius: 5px;
+}
+
+.item > p > span {
+  font-weight: 700;
+  color: #1e3c82;
+}
+
+.centered > div > div {
+  margin: 0 auto !important;
+}
+
+.new-btn {
+  background-color: #bdcde1;
+  color: rgb(3, 3, 3);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.new-btn:hover {
+  background-color: #011114;
+  color: white;
+  transition: all 0.5s ease-in-out;
+}
+
+.new-btn > .text-btn {
+  margin: 0;
+  font-size: 14px;
 }

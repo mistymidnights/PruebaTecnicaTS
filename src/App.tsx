@@ -1,25 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { DataProvider } from './DataContext';
 import './App.css';
+import ModelList from './ModelList';
+import ModelEdit from './ModelEdit';
+import NewModelForm from './NewModel';
+
+//Envolvemos la aplicacion en Router para poder asignar rutas a nuestros componentes
+//Envolvemos el componente DataProvider para poder acceder a los datos de los modelos de toda la aplicacion
+//En el caso de Edit se le asigna como ruta el numero id correspondiente
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <DataProvider>
+        <div className='App'>
+          <Routes>
+            <Route path='/' Component={ModelList} />
+            <Route path='/edit/:id' Component={ModelEdit} />
+            <Route path='/new' Component={NewModelForm} />
+          </Routes>
+        </div>
+      </DataProvider>
+    </Router>
   );
 }
 

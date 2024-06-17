@@ -1,0 +1,229 @@
+{
+    "json": [
+        {
+            "info": {
+                "id": 0,
+                "position": [
+                    -3,
+                    2.0,
+                    -6
+                ]
+            },
+            "content": [
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_01.jpg",
+                    "desc": "La máquina del tiempo de Doc Brown no solo es un automóvil, sino una puerta a través de la cual podemos viajar a cualquier punto en el tiempo.",
+                    "type": "image",
+                    "title": "El DeLorean"
+                },
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_02.jpg",
+                    "desc": "Cuando Marty McFly viaja al pasado, su presencia altera la línea temporal, causando cambios significativos en el futuro.",
+                    "type": "image",
+                    "title": "Impacto Temporal"
+                }
+            ]
+        },
+        {
+            "info": {
+                "id": 1,
+                "position": [
+                    3.0,
+                    1.0,
+                    -5.0
+                ]
+            },
+            "content": [
+                {
+                    "url": "/assets/models/Section_01/Block_03/MODEL_01.jpg",
+                    "desc": "El DeLorean sigue varios pasos para viajar en el tiempo:",
+                    "type": "modelo2d",
+                    "title": "Funcionamiento del DeLorean",
+                    "hotspots": [
+                        {
+                            "id": 0,
+                            "text": "El condensador de flujo se activa.",
+                            "title": "1. Activación",
+                            "position": [
+                                50.6172839506173,
+                                32.4652777777778
+                            ]
+                        },
+                        {
+                            "id": 1,
+                            "text": "La energía requerida para el viaje es generada.",
+                            "title": "2. Generación de Energía",
+                            "position": [
+                                49.3827160493827,
+                                45.3125
+                            ]
+                        },
+                        {
+                            "id": 2,
+                            "text": "El DeLorean acelera hasta alcanzar 88 millas por hora.",
+                            "title": "3. Aceleración",
+                            "position": [
+                                71.2962962962963,
+                                57.6388888888889
+                            ]
+                        },
+                        {
+                            "id": 3,
+                            "text": "El viaje en el tiempo se inicia con un destello de luz.",
+                            "title": "4. Inicio del Viaje",
+                            "position": [
+                                63.2716049382716,
+                                80.9027777777778
+                            ]
+                        },
+                        {
+                            "id": 4,
+                            "text": "El DeLorean llega al destino temporal deseado.",
+                            "title": "5. Arribo",
+                            "position": [
+                                32.7160493827161,
+                                93.5763888888889
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "info": {
+                "id": 2,
+                "position": [
+                    2.5,
+                    3.5,
+                    -1.5
+                ]
+            },
+            "content": [
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_03.jpg",
+                    "desc": "Marty McFly no solo viaja al pasado, sino que también explora el futuro en busca de soluciones a los problemas presentes.",
+                    "type": "image",
+                    "title": "Explorando el Futuro"
+                },
+                {
+                    "url": "/assets/videos/Section_01/Block_03/VIDEO_01.mp4",
+                    "desc": "Marty observa los cambios en el futuro a través de sus propios ojos, descubriendo las consecuencias de sus acciones en el pasado.",
+                    "type": "video",
+                    "title": "Observaciones Futuras",
+                    "miniature": "/assets/images/Section_01/Block_03/VIDEO_01_min.jpg"
+                }
+            ]
+        },
+        {
+            "info": {
+                "id": 3,
+                "position": [
+                    2.5,
+                    1.5,
+                    -0.35
+                ]
+            },
+            "content": [
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_04.jpg",
+                    "desc": "El almanaque deportivo permite a Biff Tannen ganar apuestas y cambiar su destino económico.",
+                    "type": "image",
+                    "title": "El Almanaque Deportivo"
+                },
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_05.png",
+                    "desc": "El almanaque, aunque parece inofensivo, tiene un impacto profundo en la línea temporal, creando una versión alterna de Hill Valley.",
+                    "type": "image",
+                    "title": "Consecuencias del Almanaque"
+                },
+                {
+                    "url": "/assets/videos/Section_01/Block_03/VIDEO_02.mp4",
+                    "desc": "Doc Brown explica los peligros de alterar la línea temporal con el uso del almanaque deportivo.",
+                    "type": "video",
+                    "title": "Explicación de Doc",
+                    "miniature": "/assets/images/Section_01/Block_03/VIDEO_02_min.jpg"
+                }
+            ]
+        },
+        {
+            "info": {
+                "id": 4,
+                "position": [
+                    2.2,
+                    0.5,
+                    2
+                ]
+            },
+            "content": [
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_06.png",
+                    "desc": "El reloj de la torre de Hill Valley es un símbolo de la película, marcando un momento crucial en la historia.",
+                    "type": "image",
+                    "title": "El Reloj de la Torre"
+                },
+                {
+                    "desc": "Ayuda a Marty y Doc a sincronizar el DeLorean con el rayo que golpeará el reloj.",
+                    "type": "game",
+                    "title": "Sincronización del Rayo",
+                    "gameID": "7"
+                },
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_07.jpg",
+                    "desc": "El hoverboard permite a Marty escapar de sus perseguidores en el futuro.",
+                    "type": "image",
+                    "title": "El Hoverboard"
+                },
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_08.jpg",
+                    "desc": "El tren del tiempo, una creación de Doc Brown, muestra los avances en los viajes temporales.",
+                    "type": "image",
+                    "title": "El Tren del Tiempo"
+                },
+                {
+                    "desc": "Ayuda a Marty a escapar utilizando el hoverboard en una persecución emocionante.",
+                    "type": "game",
+                    "title": "Persecución en Hoverboard",
+                    "gameID": "16"
+                },
+                {
+                    "url": "/assets/videos/Section_01/Block_03/VIDEO_03.mp4",
+                    "desc": "Doc y Marty usan la perspectiva forzada para engañar a Biff y escapar.",
+                    "type": "video",
+                    "title": "Truco de Perspectiva",
+                    "miniature": "/assets/images/Section_01/Block_03/VIDEO_03_min.jpg"
+                },
+                {
+                    "url": "/assets/videos/Section_01/Block_03/VIDEO_04.mp4",
+                    "desc": "Los ojos de Marty reflejan su sorpresa al ver los cambios en el futuro.",
+                    "type": "video",
+                    "title": "Sorpresa Futurista",
+                    "miniature": "/assets/images/Section_01/Block_03/VIDEO_04_min.jpg"
+                }
+            ]
+        },
+        {
+            "info": {
+                "id": 5,
+                "position": [
+                    -0.5,
+                    0.8,
+                    3
+                ]
+            },
+            "content": [
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_09.jpg",
+                    "desc": "El cambio de color en la chaqueta de Marty muestra cómo la tecnología del futuro puede ser sorprendente.",
+                    "type": "image",
+                    "title": "La Chaqueta de Marty"
+                },
+                {
+                    "url": "/assets/images/Section_01/Block_03/IMG_10.jpg",
+                    "desc": "Los autos voladores en el futuro de Hill Valley son un símbolo de los avances tecnológicos.",
+                    "type": "image",
+                    "title": "Autos Voladores"
+                }
+            ]
+        }
+    ]
+}
